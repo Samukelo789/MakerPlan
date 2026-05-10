@@ -1,0 +1,601 @@
+product_idea,category,skill_level,available_materials,available_tools,budget_zar,estimated_cost_zar,build_feasible,build_time,revisions_needed
+Screwdriver Organiser,tools,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",21,12,YES,1-2 hours,1
+Phone Stand,display,Beginner,"cardboard, glue, scissors","knife, cutting mat",25,13,YES,2-3 hours,0
+Wire Storage Rack,organisation,Advanced,"steel rods, screws, drill bits","CNC router, clamps",342,247,YES,6-10 hours,1
+Cable Organiser,organisation,Beginner,"cardboard, glue, scissors","stapler, tape measure",68,35,YES,2-3 hours,1
+Phone Cradle,display,Beginner,"old packaging, glue","scissors, ruler, glue gun",66,35,YES,2-3 hours,1
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",65,32,YES,1-2 hours,0
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",138,90,YES,2-4 hours,1
+Parts Storage Box,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",236,163,YES,6-10 hours,1
+Phone Amplifier,audio,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",485,307,YES,4-8 hours,1
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","soldering iron, wire cutters",88,52,NO,4-6 hours,2
+Soldering Station Holder,tools,Advanced,"PCB board, solder, wires","CNC router, clamps",434,270,YES,1-2 days,1
+Protective Phone Case,protection,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",28,15,YES,1-2 hours,0
+Phone Cradle,display,Advanced,"wood, metal brackets, bolts","lathe, drill press",416,287,YES,1-2 days,0
+Screwdriver Organiser,tools,Advanced,"PCB board, solder, wires","lathe, drill press",258,181,YES,4-8 hours,1
+Soldering Station Holder,tools,Beginner,"cardboard, rubber bands","knife, cutting mat",49,24,YES,1-2 hours,1
+USB Hub Stand,charging,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",459,317,YES,1-2 days,1
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",27,16,YES,1-2 hours,0
+Anti-slip Phone Mat,protection,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",240,147,YES,4-8 hours,1
+Phone Charging Station,charging,Beginner,"plastic bottles, tape","knife, cutting mat",36,20,YES,2-3 hours,1
+Screwdriver Organiser,tools,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",391,260,YES,4-8 hours,0
+Protective Phone Case,protection,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",57,31,YES,1-2 hours,0
+Charging Dock,charging,Beginner,"cardboard, rubber bands","marker, scissors",75,39,YES,1-2 hours,0
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",495,332,NO,4-8 hours,1
+Screwdriver Organiser,tools,Intermediate,"PVC pipe, screws, glue","drill, saw, measuring tape",125,77,YES,2-4 hours,1
+Parts Storage Box,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",182,124,YES,2-4 hours,1
+Cable Organiser,organisation,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",139,83,NO,2-4 hours,3
+Phone Charging Station,charging,Beginner,"plastic bottles, tape","marker, scissors",25,15,YES,2-3 hours,1
+Repair Bench Organiser,organisation,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",195,111,YES,3-5 hours,1
+Soldering Station Holder,tools,Advanced,"steel rods, screws, drill bits","lathe, drill press",484,338,YES,4-8 hours,0
+Earphone Holder,organisation,Advanced,"aluminium sheet, welding rods","CNC router, clamps",477,291,YES,1-2 days,0
+Phone Stand,display,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",241,175,YES,6-10 hours,0
+Anti-slip Phone Mat,protection,Advanced,"aluminium sheet, welding rods","CNC router, clamps",326,224,YES,1-2 days,1
+Anti-slip Phone Mat,protection,Intermediate,"recycled plastic, bolts","jigsaw, clamps",106,69,YES,2-4 hours,1
+Wire Storage Rack,organisation,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",198,132,YES,2-4 hours,0
+Phone Charging Station,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",96,66,NO,3-5 hours,1
+Wire Storage Rack,organisation,Advanced,"aluminium sheet, welding rods","lathe, drill press",354,245,NO,1-2 days,1
+Anti-slip Phone Mat,protection,Beginner,"plastic bottles, tape","stapler, tape measure",36,18,YES,2-3 hours,0
+Parts Storage Box,organisation,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",106,70,NO,2-4 hours,1
+Screwdriver Organiser,tools,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",186,111,YES,2-4 hours,1
+Phone Charging Station,charging,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",418,286,YES,6-10 hours,0
+Soldering Station Holder,tools,Beginner,"cardboard, glue, scissors","stapler, tape measure",22,11,YES,1-2 hours,0
+Screwdriver Organiser,tools,Beginner,"old packaging, glue","knife, cutting mat",42,24,YES,1-2 hours,0
+Phone Cradle,display,Beginner,"cardboard, rubber bands","marker, scissors",76,40,YES,1-2 hours,1
+Cable Organiser,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",255,168,YES,4-8 hours,1
+Protective Phone Case,protection,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",185,124,YES,3-5 hours,1
+Phone Amplifier,audio,Beginner,"old packaging, glue","stapler, tape measure",69,35,YES,1-2 hours,0
+Anti-slip Phone Mat,protection,Intermediate,"PVC pipe, screws, glue","drill, saw, measuring tape",102,65,NO,4-6 hours,2
+Protective Phone Case,protection,Advanced,"aluminium sheet, welding rods","CNC router, clamps",360,240,NO,1-2 days,1
+Phone Amplifier,audio,Beginner,"plastic bottles, tape","stapler, tape measure",65,35,YES,2-3 hours,0
+Screwdriver Organiser,tools,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",159,96,YES,4-6 hours,1
+Protective Phone Case,protection,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",169,102,YES,4-6 hours,0
+Earphone Holder,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",354,234,NO,4-8 hours,2
+Phone Cradle,display,Advanced,"steel rods, screws, drill bits","CNC router, clamps",364,244,YES,1-2 days,0
+Screwdriver Organiser,tools,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",38,21,YES,1-2 hours,1
+Repair Bench Organiser,organisation,Beginner,"old packaging, glue","scissors, ruler, glue gun",29,14,YES,2-3 hours,1
+Anti-slip Phone Mat,protection,Advanced,"wood, metal brackets, bolts","CNC router, clamps",494,311,YES,4-8 hours,0
+Screwdriver Organiser,tools,Advanced,"aluminium sheet, welding rods","CNC router, clamps",202,148,NO,4-8 hours,1
+Phone Cradle,display,Advanced,"aluminium sheet, welding rods","CNC router, clamps",465,311,YES,4-8 hours,1
+Screwdriver Organiser,tools,Advanced,"wood, metal brackets, bolts","CNC router, clamps",486,335,NO,1-2 days,2
+Anti-slip Phone Mat,protection,Beginner,"plastic bottles, tape","stapler, tape measure",67,39,YES,2-3 hours,0
+Phone Amplifier,audio,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",89,59,YES,4-6 hours,0
+Cable Organiser,organisation,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",34,18,YES,2-3 hours,1
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","CNC router, clamps",438,290,YES,1-2 days,0
+USB Hub Stand,charging,Advanced,"PCB board, solder, wires","CNC router, clamps",394,265,NO,6-10 hours,3
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",479,345,NO,6-10 hours,2
+Wire Storage Rack,organisation,Beginner,"old packaging, glue","knife, cutting mat",44,23,YES,2-3 hours,0
+Earphone Holder,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",213,157,YES,1-2 days,1
+Cable Organiser,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",103,58,YES,3-5 hours,1
+Phone Cradle,display,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",115,77,YES,3-5 hours,0
+Parts Storage Box,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",226,169,YES,4-8 hours,0
+Repair Bench Organiser,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",59,29,YES,2-3 hours,1
+Phone Cradle,display,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",101,65,NO,3-5 hours,1
+Earphone Holder,organisation,Beginner,"old packaging, glue","marker, scissors",79,41,YES,1-2 hours,0
+Earphone Holder,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",324,199,NO,6-10 hours,3
+Soldering Station Holder,tools,Advanced,"aluminium sheet, welding rods","CNC router, clamps",389,237,YES,6-10 hours,0
+Soldering Station Holder,tools,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",161,110,YES,2-4 hours,1
+Earphone Holder,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",447,299,NO,4-8 hours,1
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",111,74,YES,2-4 hours,1
+USB Hub Stand,charging,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",103,65,YES,3-5 hours,1
+Phone Charging Station,charging,Beginner,"old packaging, glue","marker, scissors",53,31,YES,1-2 hours,1
+Screwdriver Organiser,tools,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",451,301,YES,6-10 hours,0
+Phone Amplifier,audio,Advanced,"PCB board, solder, wires","CNC router, clamps",497,326,YES,1-2 days,1
+Protective Phone Case,protection,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",432,277,YES,6-10 hours,0
+Parts Storage Box,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",294,185,YES,4-8 hours,0
+Phone Amplifier,audio,Beginner,"plastic bottles, tape","stapler, tape measure",43,22,YES,1-2 hours,0
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",169,117,YES,2-4 hours,1
+Wire Storage Rack,organisation,Intermediate,"recycled plastic, bolts","jigsaw, clamps",136,83,NO,2-4 hours,1
+Soldering Station Holder,tools,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",89,57,YES,4-6 hours,1
+Charging Dock,charging,Beginner,"plastic bottles, tape","marker, scissors",27,15,YES,2-3 hours,1
+Phone Amplifier,audio,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",419,271,YES,1-2 days,0
+Phone Amplifier,audio,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",241,150,YES,4-8 hours,1
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","CNC router, clamps",440,283,YES,4-8 hours,0
+Anti-slip Phone Mat,protection,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",180,121,YES,2-4 hours,0
+Screwdriver Organiser,tools,Beginner,"cardboard, glue, scissors","knife, cutting mat",78,40,YES,2-3 hours,1
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","marker, scissors",49,28,YES,2-3 hours,0
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",76,40,YES,1-2 hours,0
+Screwdriver Organiser,tools,Advanced,"PCB board, solder, wires","welding machine, angle grinder",500,371,NO,4-8 hours,2
+Phone Charging Station,charging,Advanced,"wood, metal brackets, bolts","CNC router, clamps",426,314,YES,4-8 hours,1
+Protective Phone Case,protection,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",122,74,YES,3-5 hours,1
+Phone Amplifier,audio,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",405,292,YES,6-10 hours,1
+Protective Phone Case,protection,Beginner,"cardboard, glue, scissors","marker, scissors",69,36,YES,2-3 hours,0
+Repair Bench Organiser,organisation,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",385,267,YES,4-8 hours,1
+Phone Charging Station,charging,Beginner,"old packaging, glue","scissors, ruler, glue gun",79,41,YES,1-2 hours,0
+Parts Storage Box,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",39,21,YES,1-2 hours,1
+Charging Dock,charging,Advanced,"PCB board, solder, wires","CNC router, clamps",278,188,YES,6-10 hours,1
+Repair Bench Organiser,organisation,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",150,87,YES,3-5 hours,1
+Protective Phone Case,protection,Advanced,"PCB board, solder, wires","CNC router, clamps",336,243,YES,4-8 hours,1
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",124,75,YES,3-5 hours,0
+Parts Storage Box,organisation,Beginner,"old packaging, glue","scissors, ruler, glue gun",56,29,YES,2-3 hours,1
+Parts Storage Box,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",129,90,YES,2-4 hours,0
+Phone Charging Station,charging,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",369,270,NO,1-2 days,2
+Phone Stand,display,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",273,181,YES,6-10 hours,1
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","lathe, drill press",403,281,NO,1-2 days,3
+Anti-slip Phone Mat,protection,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",191,121,YES,2-4 hours,0
+Soldering Station Holder,tools,Beginner,"old packaging, glue","knife, cutting mat",68,38,YES,2-3 hours,0
+Phone Stand,display,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",181,103,YES,2-4 hours,1
+Earphone Holder,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",292,183,YES,6-10 hours,0
+Repair Bench Organiser,organisation,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",161,96,YES,3-5 hours,0
+Charging Dock,charging,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",200,122,YES,3-5 hours,1
+Repair Bench Organiser,organisation,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",189,119,YES,4-6 hours,1
+Phone Stand,display,Advanced,"aluminium sheet, welding rods","CNC router, clamps",402,258,YES,6-10 hours,0
+Earphone Holder,organisation,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",108,70,YES,4-6 hours,0
+Phone Amplifier,audio,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",84,54,YES,3-5 hours,1
+Cable Organiser,organisation,Beginner,"cardboard, rubber bands","stapler, tape measure",28,16,YES,1-2 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",183,110,NO,2-4 hours,1
+Phone Cradle,display,Beginner,"old packaging, glue","stapler, tape measure",75,42,YES,1-2 hours,1
+Phone Stand,display,Intermediate,"recycled plastic, bolts","jigsaw, clamps",148,85,YES,4-6 hours,1
+Charging Dock,charging,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",319,214,YES,1-2 days,0
+Screwdriver Organiser,tools,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",196,129,YES,2-4 hours,0
+Phone Amplifier,audio,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",94,54,NO,3-5 hours,2
+Screwdriver Organiser,tools,Advanced,"steel rods, screws, drill bits","CNC router, clamps",476,316,YES,1-2 days,0
+USB Hub Stand,charging,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",158,98,NO,2-4 hours,2
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","stapler, tape measure",74,39,NO,1-2 hours,2
+Phone Amplifier,audio,Beginner,"cardboard, glue, scissors","knife, cutting mat",27,16,YES,1-2 hours,0
+Phone Cradle,display,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",111,78,YES,4-6 hours,0
+Earphone Holder,organisation,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",72,42,YES,2-3 hours,0
+Cable Organiser,organisation,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",328,236,YES,4-8 hours,1
+Phone Cradle,display,Beginner,"cardboard, glue, scissors","knife, cutting mat",57,30,YES,2-3 hours,0
+Parts Storage Box,organisation,Beginner,"cardboard, glue, scissors","marker, scissors",50,27,YES,1-2 hours,0
+Parts Storage Box,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",466,301,YES,6-10 hours,1
+Soldering Station Holder,tools,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",255,172,NO,6-10 hours,3
+Cable Organiser,organisation,Beginner,"cardboard, rubber bands","marker, scissors",28,14,YES,2-3 hours,1
+Phone Charging Station,charging,Advanced,"steel rods, screws, drill bits","CNC router, clamps",420,258,YES,6-10 hours,0
+Soldering Station Holder,tools,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",185,115,YES,3-5 hours,1
+Screwdriver Organiser,tools,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",127,88,YES,2-4 hours,0
+Charging Dock,charging,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",92,61,YES,4-6 hours,1
+Screwdriver Organiser,tools,Beginner,"old packaging, glue","scissors, ruler, glue gun",46,24,YES,2-3 hours,1
+Protective Phone Case,protection,Beginner,"old packaging, glue","knife, cutting mat",56,30,YES,1-2 hours,1
+USB Hub Stand,charging,Advanced,"steel rods, screws, drill bits","CNC router, clamps",388,239,YES,1-2 days,0
+Earphone Holder,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",336,203,YES,6-10 hours,0
+Cable Organiser,organisation,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",56,31,YES,1-2 hours,1
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",123,72,YES,2-4 hours,0
+Cable Organiser,organisation,Advanced,"wood, metal brackets, bolts","CNC router, clamps",225,158,YES,1-2 days,1
+Soldering Station Holder,tools,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",107,71,YES,3-5 hours,1
+Phone Charging Station,charging,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",357,217,YES,4-8 hours,1
+Repair Bench Organiser,organisation,Beginner,"cardboard, glue, scissors","marker, scissors",68,35,YES,2-3 hours,0
+Cable Organiser,organisation,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",148,97,YES,3-5 hours,0
+Soldering Station Holder,tools,Beginner,"old packaging, glue","marker, scissors",49,29,YES,2-3 hours,1
+Charging Dock,charging,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",82,57,YES,2-4 hours,1
+USB Hub Stand,charging,Beginner,"cardboard, glue, scissors","marker, scissors",35,19,YES,2-3 hours,1
+Repair Bench Organiser,organisation,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",179,104,YES,3-5 hours,1
+Parts Storage Box,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",275,175,YES,1-2 days,0
+Phone Cradle,display,Advanced,"wood, metal brackets, bolts","CNC router, clamps",238,149,NO,1-2 days,3
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",489,341,NO,4-8 hours,2
+Charging Dock,charging,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",136,88,YES,4-6 hours,0
+Phone Amplifier,audio,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",137,77,YES,4-6 hours,0
+Earphone Holder,organisation,Advanced,"aluminium sheet, welding rods","CNC router, clamps",459,302,YES,1-2 days,0
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",443,299,NO,6-10 hours,3
+Charging Dock,charging,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",288,174,YES,6-10 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",129,80,YES,2-4 hours,1
+Charging Dock,charging,Advanced,"steel rods, screws, drill bits","lathe, drill press",397,255,YES,4-8 hours,0
+Anti-slip Phone Mat,protection,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",119,83,YES,4-6 hours,0
+Phone Amplifier,audio,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",392,273,YES,1-2 days,1
+Phone Charging Station,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",82,50,YES,3-5 hours,0
+Repair Bench Organiser,organisation,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",29,14,YES,2-3 hours,0
+Earphone Holder,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",99,58,YES,2-4 hours,1
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",321,239,YES,1-2 days,0
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",195,132,YES,3-5 hours,1
+Phone Charging Station,charging,Advanced,"steel rods, screws, drill bits","lathe, drill press",414,308,NO,4-8 hours,3
+Wire Storage Rack,organisation,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",150,104,YES,2-4 hours,0
+Phone Amplifier,audio,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",195,123,YES,3-5 hours,1
+Anti-slip Phone Mat,protection,Beginner,"plastic bottles, tape","marker, scissors",46,22,YES,1-2 hours,1
+Repair Bench Organiser,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",40,24,YES,1-2 hours,0
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",169,114,YES,4-6 hours,0
+Anti-slip Phone Mat,protection,Beginner,"old packaging, glue","scissors, ruler, glue gun",21,11,YES,2-3 hours,0
+Phone Amplifier,audio,Beginner,"old packaging, glue","scissors, ruler, glue gun",23,12,YES,1-2 hours,1
+Earphone Holder,organisation,Advanced,"steel rods, screws, drill bits","lathe, drill press",208,145,YES,6-10 hours,0
+Earphone Holder,organisation,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",110,70,YES,2-4 hours,0
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",85,55,NO,3-5 hours,1
+Protective Phone Case,protection,Beginner,"cardboard, rubber bands","knife, cutting mat",66,37,YES,1-2 hours,1
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",184,120,YES,4-6 hours,0
+Phone Cradle,display,Beginner,"cardboard, glue, scissors","stapler, tape measure",24,14,NO,1-2 hours,1
+Phone Cradle,display,Beginner,"old packaging, glue","marker, scissors",76,37,NO,2-3 hours,1
+Phone Cradle,display,Advanced,"aluminium sheet, welding rods","lathe, drill press",297,191,NO,6-10 hours,1
+Phone Cradle,display,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",135,92,YES,2-4 hours,1
+Parts Storage Box,organisation,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",127,88,YES,2-4 hours,1
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","stapler, tape measure",54,28,YES,2-3 hours,1
+Earphone Holder,organisation,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",418,261,YES,1-2 days,1
+Earphone Holder,organisation,Intermediate,"PVC pipe, screws, glue","drill, saw, measuring tape",115,75,YES,4-6 hours,1
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",281,209,YES,4-8 hours,0
+Repair Bench Organiser,organisation,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",387,253,NO,1-2 days,2
+Protective Phone Case,protection,Intermediate,"recycled plastic, bolts","jigsaw, clamps",136,91,YES,3-5 hours,1
+Repair Bench Organiser,organisation,Beginner,"old packaging, glue","scissors, ruler, glue gun",21,12,YES,2-3 hours,1
+Parts Storage Box,organisation,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",107,75,YES,2-4 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, glue, scissors","stapler, tape measure",48,24,YES,2-3 hours,0
+Phone Charging Station,charging,Advanced,"steel rods, screws, drill bits","lathe, drill press",348,255,NO,1-2 days,1
+Charging Dock,charging,Beginner,"cardboard, glue, scissors","stapler, tape measure",70,35,YES,2-3 hours,1
+Phone Cradle,display,Advanced,"PCB board, solder, wires","CNC router, clamps",266,184,YES,1-2 days,1
+Phone Charging Station,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",178,110,YES,4-6 hours,0
+Wire Storage Rack,organisation,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",167,106,YES,3-5 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","knife, cutting mat",53,26,YES,2-3 hours,1
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","knife, cutting mat",36,18,NO,2-3 hours,3
+Phone Charging Station,charging,Beginner,"plastic bottles, tape","knife, cutting mat",52,29,YES,2-3 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","knife, cutting mat",25,12,YES,2-3 hours,0
+Wire Storage Rack,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",479,308,NO,1-2 days,2
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",89,58,YES,3-5 hours,0
+Protective Phone Case,protection,Advanced,"PCB board, solder, wires","CNC router, clamps",273,177,YES,4-8 hours,1
+Phone Charging Station,charging,Advanced,"PCB board, solder, wires","CNC router, clamps",254,165,YES,4-8 hours,0
+Charging Dock,charging,Beginner,"old packaging, glue","knife, cutting mat",38,23,YES,1-2 hours,1
+Anti-slip Phone Mat,protection,Advanced,"wood, metal brackets, bolts","CNC router, clamps",360,226,YES,6-10 hours,1
+Phone Stand,display,Beginner,"plastic bottles, tape","knife, cutting mat",80,42,YES,2-3 hours,0
+Phone Stand,display,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",143,92,YES,4-6 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","marker, scissors",47,23,YES,2-3 hours,0
+Soldering Station Holder,tools,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",56,31,YES,2-3 hours,1
+Phone Cradle,display,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",343,248,YES,4-8 hours,1
+Protective Phone Case,protection,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",151,104,YES,4-6 hours,0
+Phone Stand,display,Beginner,"old packaging, glue","knife, cutting mat",28,16,YES,1-2 hours,1
+Anti-slip Phone Mat,protection,Advanced,"PCB board, solder, wires","lathe, drill press",363,227,NO,1-2 days,3
+Phone Charging Station,charging,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",170,109,YES,3-5 hours,0
+Soldering Station Holder,tools,Advanced,"aluminium sheet, welding rods","CNC router, clamps",357,257,YES,6-10 hours,0
+Parts Storage Box,organisation,Beginner,"old packaging, glue","knife, cutting mat",57,31,YES,1-2 hours,0
+Earphone Holder,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",256,161,YES,6-10 hours,0
+Soldering Station Holder,tools,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",441,322,YES,1-2 days,0
+Phone Charging Station,charging,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",164,103,YES,4-6 hours,1
+Phone Charging Station,charging,Intermediate,"recycled plastic, bolts","jigsaw, clamps",166,111,YES,2-4 hours,0
+Phone Amplifier,audio,Advanced,"PCB board, solder, wires","lathe, drill press",352,223,NO,1-2 days,1
+Parts Storage Box,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",450,291,YES,4-8 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",184,112,YES,2-4 hours,1
+Parts Storage Box,organisation,Beginner,"old packaging, glue","knife, cutting mat",42,25,YES,1-2 hours,1
+Anti-slip Phone Mat,protection,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",339,210,YES,4-8 hours,0
+Screwdriver Organiser,tools,Beginner,"old packaging, glue","scissors, ruler, glue gun",23,11,YES,1-2 hours,0
+Phone Charging Station,charging,Beginner,"old packaging, glue","marker, scissors",46,26,YES,1-2 hours,1
+Protective Phone Case,protection,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",162,92,YES,2-4 hours,1
+Anti-slip Phone Mat,protection,Beginner,"old packaging, glue","marker, scissors",79,47,NO,1-2 hours,3
+USB Hub Stand,charging,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",192,109,YES,3-5 hours,1
+Screwdriver Organiser,tools,Advanced,"wood, metal brackets, bolts","lathe, drill press",468,315,NO,4-8 hours,1
+Protective Phone Case,protection,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",66,35,YES,2-3 hours,1
+Earphone Holder,organisation,Advanced,"wood, metal brackets, bolts","CNC router, clamps",298,187,NO,1-2 days,2
+Charging Dock,charging,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",165,95,NO,2-4 hours,1
+Phone Amplifier,audio,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",110,68,YES,4-6 hours,0
+Phone Amplifier,audio,Advanced,"aluminium sheet, welding rods","CNC router, clamps",384,270,YES,6-10 hours,0
+Soldering Station Holder,tools,Advanced,"PCB board, solder, wires","welding machine, angle grinder",457,337,NO,1-2 days,2
+Protective Phone Case,protection,Advanced,"steel rods, screws, drill bits","CNC router, clamps",313,198,YES,1-2 days,1
+Soldering Station Holder,tools,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",481,354,NO,1-2 days,3
+USB Hub Stand,charging,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",53,28,YES,1-2 hours,0
+Earphone Holder,organisation,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",276,172,NO,1-2 days,1
+Parts Storage Box,organisation,Advanced,"aluminium sheet, welding rods","CNC router, clamps",450,276,YES,4-8 hours,1
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","welding machine, angle grinder",229,157,YES,6-10 hours,1
+USB Hub Stand,charging,Beginner,"old packaging, glue","stapler, tape measure",67,34,YES,1-2 hours,0
+Anti-slip Phone Mat,protection,Beginner,"plastic bottles, tape","knife, cutting mat",79,42,YES,2-3 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",137,93,NO,4-6 hours,3
+USB Hub Stand,charging,Advanced,"steel rods, screws, drill bits","CNC router, clamps",268,187,YES,1-2 days,0
+Parts Storage Box,organisation,Beginner,"cardboard, rubber bands","marker, scissors",73,35,YES,2-3 hours,1
+USB Hub Stand,charging,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",35,19,YES,1-2 hours,1
+Earphone Holder,organisation,Beginner,"cardboard, glue, scissors","marker, scissors",35,18,YES,1-2 hours,0
+Parts Storage Box,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",45,24,YES,2-3 hours,0
+USB Hub Stand,charging,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",494,320,YES,6-10 hours,0
+Screwdriver Organiser,tools,Advanced,"steel rods, screws, drill bits","CNC router, clamps",313,207,YES,1-2 days,1
+Phone Stand,display,Intermediate,"recycled plastic, bolts","jigsaw, clamps",200,130,YES,3-5 hours,0
+Phone Amplifier,audio,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",103,69,YES,4-6 hours,0
+Phone Cradle,display,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",197,112,YES,3-5 hours,0
+Phone Amplifier,audio,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",41,23,NO,1-2 hours,1
+Phone Amplifier,audio,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",166,107,YES,4-6 hours,0
+Wire Storage Rack,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",75,44,YES,1-2 hours,0
+Parts Storage Box,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",197,117,YES,2-4 hours,1
+Phone Cradle,display,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",128,80,YES,3-5 hours,1
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",71,42,YES,2-3 hours,1
+Soldering Station Holder,tools,Beginner,"cardboard, glue, scissors","stapler, tape measure",56,33,YES,2-3 hours,1
+Cable Organiser,organisation,Beginner,"plastic bottles, tape","marker, scissors",41,21,YES,2-3 hours,1
+Phone Cradle,display,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",172,112,YES,2-4 hours,0
+Parts Storage Box,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",450,282,NO,4-8 hours,3
+Phone Stand,display,Beginner,"cardboard, glue, scissors","knife, cutting mat",46,23,YES,1-2 hours,0
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",127,72,YES,2-4 hours,0
+Phone Charging Station,charging,Advanced,"PCB board, solder, wires","lathe, drill press",410,247,YES,4-8 hours,1
+Phone Cradle,display,Beginner,"plastic bottles, tape","knife, cutting mat",26,15,YES,2-3 hours,1
+Phone Amplifier,audio,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",90,55,YES,3-5 hours,0
+Screwdriver Organiser,tools,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",216,133,YES,1-2 days,0
+Parts Storage Box,organisation,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",25,13,YES,1-2 hours,0
+Repair Bench Organiser,organisation,Advanced,"aluminium sheet, welding rods","lathe, drill press",490,329,YES,1-2 days,0
+Cable Organiser,organisation,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",82,57,YES,3-5 hours,0
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","marker, scissors",56,32,YES,1-2 hours,0
+Phone Charging Station,charging,Advanced,"aluminium sheet, welding rods","lathe, drill press",377,229,YES,1-2 days,1
+Phone Cradle,display,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",83,54,YES,2-4 hours,1
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",135,79,YES,4-6 hours,1
+Phone Cradle,display,Beginner,"old packaging, glue","knife, cutting mat",65,32,YES,2-3 hours,1
+Protective Phone Case,protection,Beginner,"cardboard, rubber bands","stapler, tape measure",25,12,YES,1-2 hours,0
+Charging Dock,charging,Beginner,"old packaging, glue","scissors, ruler, glue gun",47,25,YES,1-2 hours,0
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",247,170,NO,6-10 hours,2
+Soldering Station Holder,tools,Beginner,"plastic bottles, tape","knife, cutting mat",66,39,YES,2-3 hours,0
+Cable Organiser,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",118,71,YES,3-5 hours,1
+Phone Amplifier,audio,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",180,103,YES,4-6 hours,0
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","marker, scissors",28,14,NO,2-3 hours,2
+Protective Phone Case,protection,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",184,124,YES,3-5 hours,0
+Wire Storage Rack,organisation,Intermediate,"recycled plastic, bolts","jigsaw, clamps",102,71,NO,4-6 hours,1
+Protective Phone Case,protection,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",115,78,YES,4-6 hours,0
+Screwdriver Organiser,tools,Advanced,"steel rods, screws, drill bits","CNC router, clamps",213,158,YES,6-10 hours,0
+USB Hub Stand,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",166,105,YES,4-6 hours,0
+Parts Storage Box,organisation,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",181,111,YES,4-6 hours,1
+Phone Charging Station,charging,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",70,42,YES,1-2 hours,1
+Cable Organiser,organisation,Advanced,"wood, metal brackets, bolts","lathe, drill press",222,152,YES,6-10 hours,0
+Phone Stand,display,Beginner,"plastic bottles, tape","marker, scissors",36,18,YES,2-3 hours,1
+Wire Storage Rack,organisation,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",456,284,NO,6-10 hours,2
+Anti-slip Phone Mat,protection,Beginner,"cardboard, rubber bands","stapler, tape measure",27,16,YES,2-3 hours,1
+Phone Cradle,display,Beginner,"old packaging, glue","marker, scissors",53,29,YES,2-3 hours,0
+Phone Amplifier,audio,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",71,40,YES,1-2 hours,0
+Phone Charging Station,charging,Beginner,"old packaging, glue","knife, cutting mat",55,27,YES,2-3 hours,0
+Cable Organiser,organisation,Advanced,"steel rods, screws, drill bits","CNC router, clamps",421,278,YES,1-2 days,1
+Soldering Station Holder,tools,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",65,33,YES,1-2 hours,1
+Protective Phone Case,protection,Beginner,"old packaging, glue","stapler, tape measure",49,24,YES,2-3 hours,1
+Earphone Holder,organisation,Beginner,"plastic bottles, tape","stapler, tape measure",42,22,YES,1-2 hours,0
+Protective Phone Case,protection,Beginner,"plastic bottles, tape","marker, scissors",35,18,YES,2-3 hours,0
+Earphone Holder,organisation,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",134,79,YES,3-5 hours,1
+Cable Organiser,organisation,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",40,23,YES,2-3 hours,0
+Repair Bench Organiser,organisation,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",151,95,YES,4-6 hours,1
+Wire Storage Rack,organisation,Beginner,"plastic bottles, tape","stapler, tape measure",25,14,YES,1-2 hours,1
+Repair Bench Organiser,organisation,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",347,217,YES,1-2 days,0
+Phone Amplifier,audio,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",387,264,NO,6-10 hours,1
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","lathe, drill press",326,210,NO,6-10 hours,1
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","marker, scissors",69,40,YES,1-2 hours,0
+Phone Cradle,display,Beginner,"cardboard, rubber bands","stapler, tape measure",72,36,YES,1-2 hours,1
+Parts Storage Box,organisation,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",117,75,NO,3-5 hours,1
+Phone Amplifier,audio,Advanced,"steel rods, screws, drill bits","lathe, drill press",264,186,YES,4-8 hours,1
+Wire Storage Rack,organisation,Beginner,"old packaging, glue","marker, scissors",56,31,YES,1-2 hours,0
+Soldering Station Holder,tools,Advanced,"wood, metal brackets, bolts","CNC router, clamps",342,241,NO,6-10 hours,3
+Phone Stand,display,Advanced,"PCB board, solder, wires","welding machine, angle grinder",247,175,YES,1-2 days,1
+Repair Bench Organiser,organisation,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",185,109,YES,4-6 hours,0
+Earphone Holder,organisation,Intermediate,"PVC pipe, screws, glue","drill, saw, measuring tape",180,109,YES,2-4 hours,1
+Phone Stand,display,Beginner,"cardboard, glue, scissors","marker, scissors",79,46,YES,1-2 hours,0
+Anti-slip Phone Mat,protection,Advanced,"PCB board, solder, wires","welding machine, angle grinder",354,221,NO,1-2 days,2
+Phone Amplifier,audio,Beginner,"cardboard, glue, scissors","marker, scissors",43,24,YES,2-3 hours,0
+Soldering Station Holder,tools,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",246,174,YES,4-8 hours,0
+Phone Charging Station,charging,Advanced,"aluminium sheet, welding rods","CNC router, clamps",427,257,YES,1-2 days,0
+Wire Storage Rack,organisation,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",34,18,YES,2-3 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",97,60,YES,2-4 hours,0
+Earphone Holder,organisation,Advanced,"steel rods, screws, drill bits","CNC router, clamps",284,189,YES,1-2 days,1
+USB Hub Stand,charging,Beginner,"cardboard, glue, scissors","marker, scissors",25,15,YES,2-3 hours,1
+Protective Phone Case,protection,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",35,18,YES,2-3 hours,0
+Phone Charging Station,charging,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",460,289,YES,6-10 hours,1
+Charging Dock,charging,Beginner,"cardboard, glue, scissors","stapler, tape measure",51,28,YES,2-3 hours,0
+Soldering Station Holder,tools,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",415,272,YES,4-8 hours,0
+Phone Stand,display,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",107,61,YES,4-6 hours,1
+Soldering Station Holder,tools,Advanced,"steel rods, screws, drill bits","lathe, drill press",405,248,YES,4-8 hours,1
+Charging Dock,charging,Advanced,"PCB board, solder, wires","CNC router, clamps",304,227,YES,1-2 days,0
+Phone Amplifier,audio,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",423,300,NO,4-8 hours,2
+Charging Dock,charging,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",158,102,YES,2-4 hours,0
+Parts Storage Box,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",30,16,YES,2-3 hours,0
+Parts Storage Box,organisation,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",173,118,YES,3-5 hours,1
+Phone Charging Station,charging,Beginner,"cardboard, glue, scissors","marker, scissors",36,20,YES,2-3 hours,1
+Phone Stand,display,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",189,121,YES,4-6 hours,0
+Repair Bench Organiser,organisation,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",460,276,NO,4-8 hours,2
+Protective Phone Case,protection,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",197,114,NO,2-4 hours,2
+Repair Bench Organiser,organisation,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",197,130,YES,2-4 hours,0
+Cable Organiser,organisation,Beginner,"old packaging, glue","scissors, ruler, glue gun",71,38,YES,2-3 hours,1
+Phone Cradle,display,Intermediate,"recycled plastic, bolts","soldering iron, wire cutters",121,69,YES,3-5 hours,1
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",324,217,YES,1-2 days,0
+Cable Organiser,organisation,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",79,42,YES,2-3 hours,0
+Phone Cradle,display,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",392,285,YES,1-2 days,0
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",87,61,YES,2-4 hours,0
+Anti-slip Phone Mat,protection,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",411,290,YES,1-2 days,0
+Screwdriver Organiser,tools,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",89,57,YES,3-5 hours,1
+USB Hub Stand,charging,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",198,133,YES,3-5 hours,1
+Repair Bench Organiser,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",80,40,YES,1-2 hours,0
+Wire Storage Rack,organisation,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",120,74,YES,3-5 hours,1
+Phone Amplifier,audio,Beginner,"cardboard, glue, scissors","knife, cutting mat",25,12,YES,2-3 hours,0
+Charging Dock,charging,Advanced,"aluminium sheet, welding rods","lathe, drill press",327,244,YES,6-10 hours,0
+Phone Stand,display,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",189,118,YES,3-5 hours,0
+Phone Cradle,display,Beginner,"plastic bottles, tape","knife, cutting mat",27,13,YES,1-2 hours,1
+Protective Phone Case,protection,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",243,167,YES,4-8 hours,0
+Anti-slip Phone Mat,protection,Advanced,"PCB board, solder, wires","welding machine, angle grinder",427,308,YES,4-8 hours,1
+Phone Stand,display,Beginner,"old packaging, glue","marker, scissors",79,43,YES,1-2 hours,1
+Screwdriver Organiser,tools,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",102,62,NO,3-5 hours,1
+Phone Stand,display,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",325,227,YES,4-8 hours,1
+Soldering Station Holder,tools,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",46,23,YES,2-3 hours,1
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","CNC router, clamps",448,292,YES,6-10 hours,0
+Phone Stand,display,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",156,92,NO,3-5 hours,3
+Protective Phone Case,protection,Advanced,"steel rods, screws, drill bits","lathe, drill press",319,238,YES,1-2 days,0
+Phone Cradle,display,Beginner,"cardboard, rubber bands","knife, cutting mat",56,33,YES,1-2 hours,0
+Earphone Holder,organisation,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",183,121,YES,4-6 hours,0
+Earphone Holder,organisation,Beginner,"old packaging, glue","stapler, tape measure",73,44,YES,1-2 hours,1
+Phone Stand,display,Beginner,"old packaging, glue","scissors, ruler, glue gun",23,12,YES,2-3 hours,0
+Phone Cradle,display,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",41,23,YES,1-2 hours,0
+Earphone Holder,organisation,Advanced,"PCB board, solder, wires","welding machine, angle grinder",272,195,NO,6-10 hours,3
+Screwdriver Organiser,tools,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",155,89,YES,4-6 hours,1
+Phone Cradle,display,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",449,313,YES,1-2 days,0
+Soldering Station Holder,tools,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",173,114,YES,4-6 hours,0
+Cable Organiser,organisation,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",362,267,NO,6-10 hours,1
+Protective Phone Case,protection,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",239,152,NO,1-2 days,3
+Screwdriver Organiser,tools,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",371,247,YES,6-10 hours,1
+Phone Cradle,display,Beginner,"old packaging, glue","knife, cutting mat",66,32,YES,2-3 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",124,79,YES,2-4 hours,1
+Charging Dock,charging,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",38,18,YES,2-3 hours,0
+Anti-slip Phone Mat,protection,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",100,66,YES,4-6 hours,1
+Parts Storage Box,organisation,Beginner,"old packaging, glue","knife, cutting mat",47,28,YES,1-2 hours,0
+Protective Phone Case,protection,Beginner,"cardboard, rubber bands","stapler, tape measure",32,17,YES,2-3 hours,0
+Charging Dock,charging,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",45,25,YES,2-3 hours,0
+Soldering Station Holder,tools,Beginner,"old packaging, glue","knife, cutting mat",38,22,YES,1-2 hours,0
+Repair Bench Organiser,organisation,Beginner,"cardboard, glue, scissors","stapler, tape measure",60,31,YES,2-3 hours,1
+Wire Storage Rack,organisation,Advanced,"steel rods, screws, drill bits","lathe, drill press",335,206,YES,6-10 hours,1
+Cable Organiser,organisation,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",85,51,YES,4-6 hours,0
+Cable Organiser,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",249,153,YES,1-2 days,0
+USB Hub Stand,charging,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",184,117,NO,3-5 hours,2
+Charging Dock,charging,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",195,133,YES,3-5 hours,0
+Cable Organiser,organisation,Beginner,"cardboard, glue, scissors","marker, scissors",71,36,YES,1-2 hours,0
+USB Hub Stand,charging,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",332,215,YES,6-10 hours,1
+Phone Charging Station,charging,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",189,113,YES,2-4 hours,1
+Cable Organiser,organisation,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",56,31,YES,1-2 hours,1
+USB Hub Stand,charging,Advanced,"wood, metal brackets, bolts","CNC router, clamps",376,275,YES,4-8 hours,0
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",98,63,YES,3-5 hours,1
+Parts Storage Box,organisation,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",23,13,NO,2-3 hours,2
+Phone Amplifier,audio,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",187,118,YES,2-4 hours,1
+Parts Storage Box,organisation,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",179,121,YES,2-4 hours,1
+Repair Bench Organiser,organisation,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",174,109,YES,4-6 hours,0
+Charging Dock,charging,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",170,107,YES,2-4 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","knife, cutting mat",35,17,YES,2-3 hours,1
+USB Hub Stand,charging,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",144,89,NO,3-5 hours,2
+Earphone Holder,organisation,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",102,71,YES,2-4 hours,1
+Parts Storage Box,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",246,158,YES,4-8 hours,0
+Screwdriver Organiser,tools,Beginner,"cardboard, glue, scissors","marker, scissors",37,21,YES,1-2 hours,0
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","stapler, tape measure",34,17,YES,2-3 hours,1
+USB Hub Stand,charging,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",138,82,YES,2-4 hours,1
+Phone Charging Station,charging,Advanced,"aluminium sheet, welding rods","lathe, drill press",344,222,YES,6-10 hours,1
+USB Hub Stand,charging,Intermediate,"recycled plastic, bolts","soldering iron, wire cutters",113,74,NO,2-4 hours,3
+Phone Cradle,display,Beginner,"old packaging, glue","stapler, tape measure",77,37,YES,1-2 hours,0
+Screwdriver Organiser,tools,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",117,70,YES,4-6 hours,0
+Protective Phone Case,protection,Advanced,"wood, metal brackets, bolts","lathe, drill press",313,220,YES,1-2 days,1
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",73,41,YES,2-3 hours,0
+Parts Storage Box,organisation,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",172,116,YES,4-6 hours,0
+Repair Bench Organiser,organisation,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",108,72,YES,3-5 hours,1
+Wire Storage Rack,organisation,Beginner,"cardboard, glue, scissors","marker, scissors",50,24,YES,1-2 hours,0
+USB Hub Stand,charging,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",395,268,YES,4-8 hours,1
+Soldering Station Holder,tools,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",434,270,NO,6-10 hours,2
+Screwdriver Organiser,tools,Beginner,"cardboard, rubber bands","knife, cutting mat",40,22,YES,1-2 hours,0
+Wire Storage Rack,organisation,Beginner,"old packaging, glue","marker, scissors",28,16,YES,2-3 hours,1
+Phone Stand,display,Beginner,"cardboard, glue, scissors","stapler, tape measure",54,27,YES,1-2 hours,0
+Screwdriver Organiser,tools,Beginner,"cardboard, rubber bands","stapler, tape measure",60,34,YES,1-2 hours,0
+Soldering Station Holder,tools,Advanced,"PCB board, solder, wires","lathe, drill press",356,223,NO,6-10 hours,3
+Phone Charging Station,charging,Advanced,"steel rods, screws, drill bits","lathe, drill press",468,305,NO,6-10 hours,2
+Phone Cradle,display,Beginner,"old packaging, glue","scissors, ruler, glue gun",30,18,YES,1-2 hours,0
+Parts Storage Box,organisation,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",33,19,YES,2-3 hours,0
+Soldering Station Holder,tools,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",330,236,YES,1-2 days,0
+Phone Stand,display,Advanced,"PCB board, solder, wires","CNC router, clamps",259,172,YES,1-2 days,0
+Repair Bench Organiser,organisation,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",204,132,YES,6-10 hours,0
+Phone Charging Station,charging,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",260,167,NO,1-2 days,1
+Phone Cradle,display,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",186,118,YES,2-4 hours,0
+Phone Charging Station,charging,Intermediate,"recycled plastic, bolts","soldering iron, wire cutters",196,115,NO,2-4 hours,1
+Screwdriver Organiser,tools,Beginner,"old packaging, glue","knife, cutting mat",78,38,YES,1-2 hours,0
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","lathe, drill press",251,185,YES,6-10 hours,1
+Phone Stand,display,Beginner,"cardboard, rubber bands","stapler, tape measure",72,36,YES,2-3 hours,1
+Parts Storage Box,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",26,15,YES,1-2 hours,1
+Protective Phone Case,protection,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",159,95,YES,2-4 hours,0
+Soldering Station Holder,tools,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",138,83,YES,4-6 hours,0
+Charging Dock,charging,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",64,36,NO,2-3 hours,3
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","welding machine, angle grinder",424,266,YES,1-2 days,0
+Wire Storage Rack,organisation,Intermediate,"PVC pipe, screws, glue","hammer, nails, sandpaper",94,64,YES,4-6 hours,1
+Phone Stand,display,Advanced,"steel rods, screws, drill bits","lathe, drill press",468,335,YES,1-2 days,0
+Soldering Station Holder,tools,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",327,220,YES,1-2 days,0
+Phone Stand,display,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",280,189,YES,4-8 hours,1
+Protective Phone Case,protection,Beginner,"plastic bottles, tape","marker, scissors",41,24,YES,2-3 hours,0
+Charging Dock,charging,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",136,91,YES,3-5 hours,0
+Wire Storage Rack,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",209,129,YES,1-2 days,1
+Anti-slip Phone Mat,protection,Advanced,"PCB board, solder, wires","lathe, drill press",487,307,YES,4-8 hours,0
+USB Hub Stand,charging,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",122,78,YES,4-6 hours,1
+Charging Dock,charging,Beginner,"cardboard, rubber bands","stapler, tape measure",68,38,YES,2-3 hours,0
+Phone Stand,display,Beginner,"old packaging, glue","scissors, ruler, glue gun",51,25,YES,2-3 hours,0
+Repair Bench Organiser,organisation,Beginner,"plastic bottles, tape","stapler, tape measure",79,46,YES,1-2 hours,1
+Phone Stand,display,Advanced,"steel rods, screws, drill bits","CNC router, clamps",263,188,YES,4-8 hours,0
+Phone Charging Station,charging,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",187,120,NO,4-6 hours,1
+Charging Dock,charging,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",164,106,NO,4-6 hours,3
+Phone Cradle,display,Beginner,"cardboard, rubber bands","marker, scissors",37,20,YES,1-2 hours,0
+Soldering Station Holder,tools,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",462,298,YES,4-8 hours,0
+Earphone Holder,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",348,245,NO,1-2 days,3
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","CNC router, clamps",365,258,NO,1-2 days,3
+Anti-slip Phone Mat,protection,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",346,253,YES,4-8 hours,1
+Cable Organiser,organisation,Beginner,"plastic bottles, tape","stapler, tape measure",62,30,YES,2-3 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, glue, scissors","stapler, tape measure",64,37,YES,2-3 hours,0
+Earphone Holder,organisation,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",487,355,YES,1-2 days,1
+Parts Storage Box,organisation,Advanced,"PCB board, solder, wires","welding machine, angle grinder",224,166,YES,4-8 hours,1
+Repair Bench Organiser,organisation,Advanced,"PCB board, solder, wires","oscilloscope, soldering station",426,309,NO,1-2 days,1
+Phone Amplifier,audio,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",102,71,YES,3-5 hours,0
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",151,90,YES,3-5 hours,1
+Parts Storage Box,organisation,Beginner,"cardboard, glue, scissors","stapler, tape measure",22,11,YES,2-3 hours,1
+Charging Dock,charging,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",362,246,NO,6-10 hours,3
+Phone Charging Station,charging,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",91,55,NO,3-5 hours,2
+Repair Bench Organiser,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",471,316,YES,1-2 days,1
+Wire Storage Rack,organisation,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",77,43,YES,2-3 hours,1
+Anti-slip Phone Mat,protection,Beginner,"cardboard, glue, scissors","stapler, tape measure",44,22,YES,2-3 hours,1
+Phone Stand,display,Intermediate,"PVC pipe, screws, glue","drill, saw, measuring tape",194,126,YES,2-4 hours,0
+Screwdriver Organiser,tools,Beginner,"old packaging, glue","scissors, ruler, glue gun",33,18,YES,1-2 hours,1
+Screwdriver Organiser,tools,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",67,38,YES,1-2 hours,0
+Phone Stand,display,Beginner,"plastic bottles, tape","stapler, tape measure",70,36,YES,2-3 hours,1
+Wire Storage Rack,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",407,271,YES,1-2 days,0
+Phone Cradle,display,Advanced,"PCB board, solder, wires","welding machine, angle grinder",499,303,NO,6-10 hours,3
+Phone Amplifier,audio,Advanced,"wood, metal brackets, bolts","CNC router, clamps",244,157,NO,1-2 days,1
+Wire Storage Rack,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",54,27,YES,2-3 hours,1
+Phone Stand,display,Advanced,"wood, metal brackets, bolts","welding machine, angle grinder",484,301,YES,6-10 hours,0
+Parts Storage Box,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",376,238,NO,4-8 hours,1
+Earphone Holder,organisation,Intermediate,"PVC pipe, screws, glue","jigsaw, clamps",104,60,YES,4-6 hours,0
+Phone Amplifier,audio,Advanced,"wood, metal brackets, bolts","lathe, drill press",234,149,YES,6-10 hours,0
+Screwdriver Organiser,tools,Advanced,"steel rods, screws, drill bits","lathe, drill press",320,197,YES,6-10 hours,1
+Protective Phone Case,protection,Advanced,"PCB board, solder, wires","lathe, drill press",356,251,YES,6-10 hours,0
+Phone Stand,display,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",111,74,YES,3-5 hours,0
+Screwdriver Organiser,tools,Advanced,"PCB board, solder, wires","lathe, drill press",369,270,YES,6-10 hours,0
+Cable Organiser,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",241,175,NO,6-10 hours,3
+Anti-slip Phone Mat,protection,Advanced,"aluminium sheet, welding rods","CNC router, clamps",239,169,NO,1-2 days,1
+Anti-slip Phone Mat,protection,Beginner,"old packaging, glue","knife, cutting mat",55,28,YES,2-3 hours,1
+Repair Bench Organiser,organisation,Advanced,"aluminium sheet, welding rods","CNC router, clamps",348,216,YES,6-10 hours,0
+Screwdriver Organiser,tools,Beginner,"plastic bottles, tape","knife, cutting mat",74,44,NO,2-3 hours,1
+Cable Organiser,organisation,Advanced,"wood, metal brackets, bolts","lathe, drill press",489,342,NO,4-8 hours,1
+Phone Cradle,display,Intermediate,"PVC pipe, screws, glue","soldering iron, wire cutters",109,62,YES,4-6 hours,1
+Soldering Station Holder,tools,Intermediate,"recycled plastic, bolts","drill, saw, measuring tape",197,123,YES,4-6 hours,1
+USB Hub Stand,charging,Advanced,"wood, metal brackets, bolts","CNC router, clamps",334,229,YES,6-10 hours,0
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",128,89,YES,3-5 hours,1
+Phone Cradle,display,Intermediate,"wood offcuts, nails, sandpaper","jigsaw, clamps",193,124,YES,2-4 hours,0
+Charging Dock,charging,Advanced,"PCB board, solder, wires","welding machine, angle grinder",343,217,YES,1-2 days,0
+Soldering Station Holder,tools,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",172,99,YES,4-6 hours,0
+Screwdriver Organiser,tools,Intermediate,"wood offcuts, nails, sandpaper","soldering iron, wire cutters",82,49,YES,4-6 hours,0
+Anti-slip Phone Mat,protection,Advanced,"steel rods, screws, drill bits","CNC router, clamps",275,167,YES,1-2 days,0
+Anti-slip Phone Mat,protection,Advanced,"wood, metal brackets, bolts","CNC router, clamps",345,256,YES,4-8 hours,0
+USB Hub Stand,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",156,90,YES,2-4 hours,1
+Anti-slip Phone Mat,protection,Intermediate,"aluminium sheet, rivets","soldering iron, wire cutters",156,100,YES,2-4 hours,0
+Repair Bench Organiser,organisation,Advanced,"aluminium sheet, welding rods","oscilloscope, soldering station",458,322,NO,6-10 hours,3
+Earphone Holder,organisation,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",76,44,YES,2-3 hours,0
+Anti-slip Phone Mat,protection,Advanced,"wood, metal brackets, bolts","CNC router, clamps",476,345,NO,6-10 hours,1
+Parts Storage Box,organisation,Advanced,"wood, metal brackets, bolts","lathe, drill press",419,266,NO,1-2 days,3
+Anti-slip Phone Mat,protection,Advanced,"wood, metal brackets, bolts","oscilloscope, soldering station",494,304,YES,4-8 hours,1
+Earphone Holder,organisation,Advanced,"aluminium sheet, welding rods","welding machine, angle grinder",409,261,YES,1-2 days,0
+Soldering Station Holder,tools,Advanced,"PCB board, solder, wires","welding machine, angle grinder",305,214,YES,4-8 hours,1
+Screwdriver Organiser,tools,Advanced,"PCB board, solder, wires","lathe, drill press",329,210,YES,1-2 days,1
+Phone Cradle,display,Beginner,"plastic bottles, tape","stapler, tape measure",46,25,YES,2-3 hours,1
+Phone Amplifier,audio,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",376,269,YES,1-2 days,0
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","welding machine, angle grinder",282,173,YES,4-8 hours,1
+Screwdriver Organiser,tools,Beginner,"old packaging, glue","scissors, ruler, glue gun",71,35,YES,1-2 hours,1
+Repair Bench Organiser,organisation,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",90,58,YES,4-6 hours,0
+Phone Cradle,display,Beginner,"cardboard, rubber bands","knife, cutting mat",60,32,YES,1-2 hours,0
+Earphone Holder,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",63,31,YES,1-2 hours,1
+Phone Cradle,display,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",125,82,YES,4-6 hours,0
+Anti-slip Phone Mat,protection,Beginner,"cardboard, rubber bands","stapler, tape measure",55,28,YES,2-3 hours,0
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",49,29,YES,2-3 hours,0
+Phone Charging Station,charging,Beginner,"cardboard, rubber bands","stapler, tape measure",52,27,NO,2-3 hours,2
+Earphone Holder,organisation,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",178,106,YES,4-6 hours,0
+Wire Storage Rack,organisation,Beginner,"plastic bottles, tape","knife, cutting mat",36,18,YES,2-3 hours,1
+Protective Phone Case,protection,Advanced,"steel rods, screws, drill bits","lathe, drill press",474,285,NO,4-8 hours,2
+Screwdriver Organiser,tools,Advanced,"wood, metal brackets, bolts","lathe, drill press",375,229,NO,6-10 hours,1
+Anti-slip Phone Mat,protection,Advanced,"steel rods, screws, drill bits","CNC router, clamps",337,211,YES,1-2 days,0
+Repair Bench Organiser,organisation,Advanced,"steel rods, screws, drill bits","oscilloscope, soldering station",323,236,YES,1-2 days,1
+Cable Organiser,organisation,Beginner,"old packaging, glue","scissors, ruler, glue gun",27,16,YES,1-2 hours,1
+Protective Phone Case,protection,Advanced,"PCB board, solder, wires","CNC router, clamps",361,243,NO,4-8 hours,3
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",108,72,YES,4-6 hours,0
+Phone Charging Station,charging,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",130,88,YES,4-6 hours,1
+Protective Phone Case,protection,Advanced,"aluminium sheet, welding rods","lathe, drill press",204,123,YES,6-10 hours,1
+Cable Organiser,organisation,Advanced,"PCB board, solder, wires","lathe, drill press",334,212,YES,4-8 hours,1
+Soldering Station Holder,tools,Beginner,"old packaging, glue","stapler, tape measure",46,26,YES,2-3 hours,0
+Earphone Holder,organisation,Beginner,"cardboard, rubber bands","knife, cutting mat",56,31,YES,2-3 hours,1
+Repair Bench Organiser,organisation,Beginner,"cardboard, glue, scissors","knife, cutting mat",71,42,YES,2-3 hours,1
+Cable Organiser,organisation,Advanced,"wood, metal brackets, bolts","lathe, drill press",464,316,YES,6-10 hours,0
+Soldering Station Holder,tools,Beginner,"cardboard, rubber bands","marker, scissors",64,32,YES,1-2 hours,1
+Parts Storage Box,organisation,Intermediate,"recycled plastic, bolts","hammer, nails, sandpaper",113,69,YES,2-4 hours,1
+Charging Dock,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",191,125,YES,3-5 hours,1
+Screwdriver Organiser,tools,Advanced,"aluminium sheet, welding rods","CNC router, clamps",449,322,YES,1-2 days,1
+Wire Storage Rack,organisation,Advanced,"PCB board, solder, wires","CNC router, clamps",274,200,YES,1-2 days,1
+USB Hub Stand,charging,Beginner,"cardboard, rubber bands","stapler, tape measure",25,12,YES,2-3 hours,1
+Phone Amplifier,audio,Intermediate,"aluminium sheet, rivets","jigsaw, clamps",179,122,YES,2-4 hours,0
+USB Hub Stand,charging,Beginner,"cardboard, glue, scissors","knife, cutting mat",28,16,YES,1-2 hours,1
+Charging Dock,charging,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",24,14,YES,2-3 hours,0
+Charging Dock,charging,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",159,92,YES,2-4 hours,0
+Parts Storage Box,organisation,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",136,88,YES,2-4 hours,1
+USB Hub Stand,charging,Intermediate,"recycled plastic, bolts","jigsaw, clamps",190,119,NO,2-4 hours,3
+Phone Charging Station,charging,Beginner,"old packaging, glue","stapler, tape measure",57,31,YES,2-3 hours,1
+Phone Charging Station,charging,Beginner,"old packaging, glue","stapler, tape measure",71,35,YES,1-2 hours,1
+Phone Stand,display,Beginner,"cardboard, rubber bands","stapler, tape measure",53,31,YES,2-3 hours,0
+Parts Storage Box,organisation,Intermediate,"aluminium sheet, rivets","hammer, nails, sandpaper",176,110,YES,4-6 hours,0
+Phone Cradle,display,Beginner,"old packaging, glue","marker, scissors",55,29,YES,1-2 hours,0
+Parts Storage Box,organisation,Advanced,"aluminium sheet, welding rods","CNC router, clamps",399,289,YES,1-2 days,0
+Phone Charging Station,charging,Advanced,"PCB board, solder, wires","CNC router, clamps",339,218,YES,4-8 hours,0
+Cable Organiser,organisation,Beginner,"old packaging, glue","stapler, tape measure",38,19,YES,2-3 hours,0
+Protective Phone Case,protection,Beginner,"plastic bottles, tape","scissors, ruler, glue gun",29,14,YES,2-3 hours,1
+Cable Organiser,organisation,Advanced,"steel rods, screws, drill bits","welding machine, angle grinder",424,301,YES,6-10 hours,0
+Protective Phone Case,protection,Intermediate,"recycled plastic, bolts","jigsaw, clamps",119,80,YES,4-6 hours,0
+Protective Phone Case,protection,Beginner,"cardboard, rubber bands","marker, scissors",73,42,YES,1-2 hours,1
+Cable Organiser,organisation,Beginner,"cardboard, glue, scissors","scissors, ruler, glue gun",77,45,YES,1-2 hours,1
+Phone Cradle,display,Intermediate,"aluminium sheet, rivets","drill, saw, measuring tape",111,74,YES,4-6 hours,0
+Wire Storage Rack,organisation,Intermediate,"wood offcuts, nails, sandpaper","drill, saw, measuring tape",167,116,NO,4-6 hours,3
+Phone Charging Station,charging,Beginner,"cardboard, rubber bands","scissors, ruler, glue gun",36,19,YES,1-2 hours,0
+Repair Bench Organiser,organisation,Advanced,"PCB board, solder, wires","welding machine, angle grinder",422,274,YES,6-10 hours,0
+Phone Stand,display,Beginner,"plastic bottles, tape","stapler, tape measure",57,33,YES,1-2 hours,0
+Cable Organiser,organisation,Intermediate,"PVC pipe, screws, glue","drill, saw, measuring tape",91,60,YES,3-5 hours,0
+Parts Storage Box,organisation,Advanced,"PCB board, solder, wires","CNC router, clamps",254,157,YES,1-2 days,0
+Phone Stand,display,Advanced,"aluminium sheet, welding rods","CNC router, clamps",393,257,YES,1-2 days,1
+Phone Charging Station,charging,Intermediate,"wood offcuts, nails, sandpaper","hammer, nails, sandpaper",149,98,YES,3-5 hours,1
+Phone Amplifier,audio,Advanced,"wood, metal brackets, bolts","lathe, drill press",483,301,YES,6-10 hours,1

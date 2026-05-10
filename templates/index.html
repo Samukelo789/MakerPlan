@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakerPlan — Community Carpentry Workshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy:     #0f2044;
+            --navy2:    #162b58;
+            --navy3:    #1e3a6e;
+            --accent:   #4f8ef7;
+            --accent2:  #7eb3ff;
+            --success:  #22c55e;
+            --warning:  #f59e0b;
+            --danger:   #ef4444;
+            --text:     #1a1a2e;
+            --muted:    #64748b;
+            --border:   #e2e8f0;
+            --bg:       #f8fafc;
+            --white:    #ffffff;
+            --sidebar-w: 240px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            width: var(--sidebar-w);
+            background: var(--navy);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 100;
+        }
+
+        .sidebar-brand {
+            padding: 28px 24px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .sidebar-brand h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--white);
+            letter-spacing: -0.3px;
+        }
+
+        .sidebar-brand p {
+            font-size: 11px;
+            color: rgba(255,255,255,0.45);
+            margin-top: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .sidebar-nav { padding: 20px 12px; flex: 1; }
+
+        .nav-label {
+            font-size: 10px;
+            color: rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            padding: 0 12px;
+            margin-bottom: 6px;
+            margin-top: 16px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.15s;
+            margin-bottom: 2px;
+        }
+
+        .nav-item:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+        .nav-item.active { background: var(--accent); color: var(--white); font-weight: 500; }
+        .nav-icon { width: 18px; height: 18px; opacity: 0.8; }
+
+        .sidebar-footer {
+            padding: 16px 24px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            font-size: 11px;
+            color: rgba(255,255,255,0.25);
+        }
+
+        .main {
+            margin-left: var(--sidebar-w);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .topbar {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .topbar h2 { font-size: 16px; font-weight: 600; color: var(--text); }
+        .topbar p  { font-size: 13px; color: var(--muted); margin-top: 1px; }
+
+        .content { padding: 32px 36px; flex: 1; }
+
+        .form-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            max-width: 680px;
+        }
+
+        .form-card-header {
+            background: var(--navy);
+            padding: 20px 28px;
+        }
+
+        .form-card-header h3 { font-size: 15px; font-weight: 600; color: var(--white); }
+        .form-card-header p  { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 3px; }
+
+        .form-body { padding: 28px; }
+
+        .section-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 14px;
+            margin-top: 24px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-label:first-child { margin-top: 0; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+        .form-group { margin-bottom: 16px; }
+
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--muted);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--text);
+            background: var(--bg);
+            font-family: 'DM Sans', sans-serif;
+            transition: border 0.15s, box-shadow 0.15s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(79,142,247,0.1);
+            background: var(--white);
+        }
+
+        textarea { resize: vertical; min-height: 80px; }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background: var(--navy);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: background 0.15s;
+            margin-top: 8px;
+        }
+
+        .btn-submit:hover { background: var(--navy3); }
+
+        #loading { display: none; text-align: center; padding: 20px 0 0; }
+
+        .spinner {
+            width: 32px; height: 32px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        #loading p { font-size: 13px; color: var(--muted); }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        @media (max-width: 640px) {
+            .sidebar { display: none; }
+            .main { margin-left: 0; }
+            .two-col { grid-template-columns: 1fr; }
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <h1>MakerPlan</h1>
+            <p>Community Carpentry Workshop</p>
+        </div>
+        <nav class="sidebar-nav">
+            <p class="nav-label">Main</p>
+            <a href="/" class="nav-item active">
+                <svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                New Plan
+            </a>
+            <a href="/dashboard" class="nav-item">
+                <svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                Dashboard
+            </a>
+            <a href="/analytics" class="nav-item">
+                <svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                Analytics
+            </a>
+            <p class="nav-label">System</p>
+            <a href="/ethics" class="nav-item">
+                <svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Ethics
+            </a>
+        </nav>
+        <div class="sidebar-footer">Group 2 — Living Lab 2026</div>
+    </aside>
+
+    <main class="main">
+        <div class="topbar">
+            <div>
+                <h2>New Prototype Plan</h2>
+                <p>Describe what you want to build and our AI will generate a carpentry plan</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form-card">
+                <div class="form-card-header">
+                    <h3>Submit Your Build Idea</h3>
+                    <p>Fill in your constraints and the system will generate 2-3 prototype variants</p>
+                </div>
+                <div class="form-body">
+                    <form action="/submit" method="POST" onsubmit="showLoading()">
+
+                        <p class="section-label">Carpenter Details</p>
+                        <div class="two-col">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input type="text" name="maker_name"
+                                    placeholder="e.g. Thabo Nkosi" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Skill Level</label>
+                                <select name="skill_level" required>
+                                    <option value="" disabled selected>Select level</option>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p class="section-label">Product Idea</p>
+                        <div class="form-group">
+                            <label>What do you want to build?</label>
+                            <input type="text" name="product_idea"
+                                placeholder="e.g. Wooden chair, Coffee table, Bookshelf, Garden bench"
+                                required>
+                        </div>
+
+                        <p class="section-label">Local Constraints</p>
+                        <div class="form-group">
+                            <label>Available Materials</label>
+                            <textarea name="materials"
+                                placeholder="e.g. Pine wood offcuts, plywood, nails, wood glue, sandpaper, varnish"
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Available Tools</label>
+                            <textarea name="tools"
+                                placeholder="e.g. Hammer, handsaw, drill, measuring tape, sandpaper, clamps"
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Budget (Rands)</label>
+                            <input type="number" name="budget"
+                                placeholder="e.g. 350" min="0" required>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Generate Prototype Plan</button>
+
+                        <div id="loading">
+                            <div class="spinner"></div>
+                            <p>Generating your carpentry plan, please wait...</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showLoading() {
+            document.querySelector('.btn-submit').style.display = 'none';
+            document.getElementById('loading').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

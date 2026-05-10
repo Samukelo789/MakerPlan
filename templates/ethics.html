@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics — MakerPlan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --navy: #0f2044; --navy2: #162b58; --navy3: #1e3a6e; --accent: #4f8ef7; --success: #22c55e; --warning: #f59e0b; --danger: #ef4444; --text: #1a1a2e; --muted: #64748b; --border: #e2e8f0; --bg: #f8fafc; --white: #ffffff; --sidebar-w: 240px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; }
+        .sidebar { width: var(--sidebar-w); background: var(--navy); min-height: 100vh; display: flex; flex-direction: column; position: fixed; top: 0; left: 0; }
+        .sidebar-brand { padding: 28px 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .sidebar-brand h1 { font-size: 18px; font-weight: 600; color: var(--white); }
+        .sidebar-brand p { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
+        .sidebar-nav { padding: 20px 12px; flex: 1; }
+        .nav-label { font-size: 10px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1.2px; padding: 0 12px; margin-bottom: 6px; margin-top: 16px; }
+        .nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: all 0.15s; margin-bottom: 2px; }
+        .nav-item:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+        .nav-item.active { background: var(--accent); color: var(--white); font-weight: 500; }
+        .nav-icon { width: 18px; height: 18px; }
+        .sidebar-footer { padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 11px; color: rgba(255,255,255,0.25); }
+        .main { margin-left: var(--sidebar-w); flex: 1; display: flex; flex-direction: column; }
+        .topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 36px; }
+        .topbar h2 { font-size: 16px; font-weight: 600; }
+        .topbar p { font-size: 13px; color: var(--muted); margin-top: 1px; }
+        .content { padding: 32px 36px; max-width: 800px; }
+        .section-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 16px; overflow: hidden; }
+        .section-header { padding: 14px 22px; background: var(--bg); border-bottom: 1px solid var(--border); }
+        .section-header h3 { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        .section-body { padding: 20px 22px; font-size: 14px; color: #334155; line-height: 1.7; }
+        .section-body p { margin-bottom: 10px; }
+        .section-body p:last-child { margin-bottom: 0; }
+        .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 20px 22px; }
+        .risk-card { padding: 14px 16px; border-radius: 8px; font-size: 13px; }
+        .risk-card.high   { background: #fee2e2; border-left: 3px solid var(--danger); }
+        .risk-card.medium { background: #fef3c7; border-left: 3px solid var(--warning); }
+        .risk-card.low    { background: #dcfce7; border-left: 3px solid var(--success); }
+        .risk-level { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .level-high   { background: var(--danger);  color: white; }
+        .level-medium { background: var(--warning); color: white; }
+        .level-low    { background: var(--success); color: white; }
+        .risk-card h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+        .risk-card p  { font-size: 12px; color: var(--muted); line-height: 1.5; }
+        .consent-list { padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; }
+        .consent-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 16px; background: #e8f0fe; border-radius: 8px; font-size: 13px; color: var(--navy); line-height: 1.5; }
+        .check-icon { width: 18px; height: 18px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+        .check-icon svg { width: 10px; height: 10px; color: white; }
+        .safeguard-list { padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; }
+        .safeguard-item { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: #f0fdf4; border-radius: 8px; font-size: 13px; color: #14532d; border-left: 3px solid var(--success); }
+        .charter-list { padding: 20px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .charter-item { padding: 14px 16px; background: var(--navy); border-radius: 8px; color: var(--white); }
+        .charter-item h4 { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: var(--accent); }
+        .charter-item p { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.5; }
+        @media (max-width: 650px) { .risk-grid { grid-template-columns: 1fr; } .charter-list { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <h1>MakerPlan</h1>
+            <p>Community Carpentry Workshop</p>
+        </div>
+        <nav class="sidebar-nav">
+            <p class="nav-label">Main</p>
+            <a href="/" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>New Plan</a>
+            <a href="/dashboard" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>Dashboard</a>
+            <a href="/analytics" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>Analytics</a>
+            <p class="nav-label">System</p>
+            <a href="/ethics" class="nav-item active"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Ethics</a>
+        </nav>
+        <div class="sidebar-footer">Group 2 — Living Lab 2026</div>
+    </aside>
+
+    <main class="main">
+        <div class="topbar">
+            <h2>Safety, Ethics and Privacy</h2>
+            <p>Community governance layer for MakerPlan</p>
+        </div>
+        <div class="content">
+
+            <div class="section-card">
+                <div class="section-header"><h3>Overview</h3></div>
+                <div class="section-body">
+                    <p>This system handles real community carpenter data and product ideas. As a community-facing tool we have a responsibility to protect privacy, ensure fair access, and prevent misuse of AI-generated build plans.</p>
+                    <p>The following policies were co-created with community carpenters and workshop stakeholders as part of our Living Lab governance framework.</p>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-header"><h3>Identified Risks and Severity</h3></div>
+                <div class="risk-grid">
+                    <div class="risk-card high">
+                        <span class="risk-level level-high">High</span>
+                        <h4>Unsafe Build Instructions</h4>
+                        <p>AI may generate build steps that skip safety precautions for power tools, sharp edges, or structural loads.</p>
+                    </div>
+                    <div class="risk-card high">
+                        <span class="risk-level level-high">High</span>
+                        <h4>Budget Misrepresentation</h4>
+                        <p>ML cost predictions may not reflect real local timber and material prices in the carpenter's area.</p>
+                    </div>
+                    <div class="risk-card medium">
+                        <span class="risk-level level-medium">Medium</span>
+                        <h4>Skill Level Mismatch</h4>
+                        <p>Plans generated for an incorrect skill level could lead to failed builds or dangerous use of tools.</p>
+                    </div>
+                    <div class="risk-card medium">
+                        <span class="risk-level level-medium">Medium</span>
+                        <h4>Data Privacy</h4>
+                        <p>Carpenter product ideas and business plans submitted to the system could be exposed to competitors.</p>
+                    </div>
+                    <div class="risk-card low">
+                        <span class="risk-level level-low">Low</span>
+                        <h4>Language Barriers</h4>
+                        <p>Non-English speaking carpenters may struggle to follow AI-generated plans written in English only.</p>
+                    </div>
+                    <div class="risk-card low">
+                        <span class="risk-level level-low">Low</span>
+                        <h4>Access Inequality</h4>
+                        <p>Carpenters without internet access or devices cannot use the system without workshop assistance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-header"><h3>Carpenter Consent Agreement</h3></div>
+                <div class="consent-list">
+                    <div class="consent-item">
+                        <div class="check-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+                        I consent to my build idea and constraints being stored for plan generation purposes only.
+                    </div>
+                    <div class="consent-item">
+                        <div class="check-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+                        I understand that the AI-generated prototype plan is a recommendation and must be verified before building.
+                    </div>
+                    <div class="consent-item">
+                        <div class="check-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+                        I agree that my data will not be shared outside of this carpentry workshop.
+                    </div>
+                    <div class="consent-item">
+                        <div class="check-icon"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg></div>
+                        I acknowledge that I can submit feedback to revise any plan I believe is unrealistic or unsafe.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-header"><h3>Safeguards In Place</h3></div>
+                <div class="safeguard-list">
+                    <div class="safeguard-item">Carpenter feedback loop allows any unsafe or unrealistic plan to be flagged and revised by the AI</div>
+                    <div class="safeguard-item">ML feasibility predictor flags builds unlikely to succeed before a plan is generated</div>
+                    <div class="safeguard-item">Cost predictions are grounded in 600 real synthetic records based on local South African timber pricing</div>
+                    <div class="safeguard-item">All data is stored locally and is not shared with external servers or third parties</div>
+                    <div class="safeguard-item">Carpenters can print their plans for offline use in workshops with limited internet access</div>
+                    <div class="safeguard-item">Skill level is captured upfront to ensure plans and tool recommendations match the carpenter's actual capability</div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <div class="section-header"><h3>Living Lab AI Charter</h3></div>
+                <div class="charter-list">
+                    <div class="charter-item"><h4>Transparency</h4><p>Carpenters can always see how their plan was generated and what ML predictions were used.</p></div>
+                    <div class="charter-item"><h4>Fairness</h4><p>All carpenters receive equal access to the planning system regardless of background or skill level.</p></div>
+                    <div class="charter-item"><h4>Privacy</h4><p>Only build-related data is collected. No personal identifiers beyond the carpenter's name.</p></div>
+                    <div class="charter-item"><h4>Accountability</h4><p>Carpenters are responsible for verifying plans and applying proper safety precautions before building.</p></div>
+                    <div class="charter-item"><h4>Community Control</h4><p>The workshop administrator can override or delete any AI-generated plan at any time.</p></div>
+                    <div class="charter-item"><h4>Iteration</h4><p>The system improves through real carpenter feedback across multiple Living Lab cycles.</p></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

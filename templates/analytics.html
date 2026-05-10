@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics — MakerPlan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <style>
+        :root { --navy: #0f2044; --navy2: #162b58; --navy3: #1e3a6e; --accent: #4f8ef7; --success: #22c55e; --warning: #f59e0b; --danger: #ef4444; --text: #1a1a2e; --muted: #64748b; --border: #e2e8f0; --bg: #f8fafc; --white: #ffffff; --sidebar-w: 240px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; }
+        .sidebar { width: var(--sidebar-w); background: var(--navy); min-height: 100vh; display: flex; flex-direction: column; position: fixed; top: 0; left: 0; }
+        .sidebar-brand { padding: 28px 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .sidebar-brand h1 { font-size: 18px; font-weight: 600; color: var(--white); }
+        .sidebar-brand p { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
+        .sidebar-nav { padding: 20px 12px; flex: 1; }
+        .nav-label { font-size: 10px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1.2px; padding: 0 12px; margin-bottom: 6px; margin-top: 16px; }
+        .nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: all 0.15s; margin-bottom: 2px; }
+        .nav-item:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+        .nav-item.active { background: var(--accent); color: var(--white); font-weight: 500; }
+        .nav-icon { width: 18px; height: 18px; }
+        .sidebar-footer { padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 11px; color: rgba(255,255,255,0.25); }
+        .main { margin-left: var(--sidebar-w); flex: 1; display: flex; flex-direction: column; }
+        .topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 36px; }
+        .topbar h2 { font-size: 16px; font-weight: 600; }
+        .topbar p { font-size: 13px; color: var(--muted); margin-top: 1px; }
+        .content { padding: 32px 36px; }
+        .kpi-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-bottom: 24px; }
+        .kpi-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 18px 16px; }
+        .kpi-card .value { font-size: 24px; font-weight: 700; font-family: 'DM Mono', monospace; color: var(--navy); }
+        .kpi-card .label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+        .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+        .chart-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+        .chart-card.full { grid-column: 1 / -1; }
+        .chart-header { padding: 14px 20px; border-bottom: 1px solid var(--border); background: var(--bg); }
+        .chart-header h3 { font-size: 11px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        .chart-body { padding: 20px; }
+        .chart-body canvas { max-height: 220px; }
+        .table-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+        .table-header { padding: 14px 20px; border-bottom: 1px solid var(--border); background: var(--bg); }
+        .table-header h3 { font-size: 11px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        thead th { background: var(--navy); color: rgba(255,255,255,0.7); padding: 10px 16px; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 500; }
+        tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:hover td { background: var(--bg); }
+        .pill { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+        .pill-green { background: #dcfce7; color: #14532d; }
+        .pill-red { background: #fee2e2; color: #7f1d1d; }
+        .pill-blue { background: #dbeafe; color: #1e3a8a; }
+        .pill-yellow { background: #fef3c7; color: #92400e; }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <h1>MakerPlan</h1>
+            <p>Community Carpentry Workshop</p>
+        </div>
+        <nav class="sidebar-nav">
+            <p class="nav-label">Main</p>
+            <a href="/" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>New Plan</a>
+            <a href="/dashboard" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>Dashboard</a>
+            <a href="/analytics" class="nav-item active"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>Analytics</a>
+            <p class="nav-label">System</p>
+            <a href="/ethics" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Ethics</a>
+        </nav>
+        <div class="sidebar-footer">Group 2 — Living Lab 2026</div>
+    </aside>
+
+    <main class="main">
+        <div class="topbar">
+            <h2>Analytics and Insights</h2>
+            <p>Live data from all submitted carpentry prototype plans</p>
+        </div>
+        <div class="content">
+            <div class="kpi-row">
+                <div class="kpi-card"><div class="value">{{ stats.total_plans }}</div><div class="label">Total Plans</div></div>
+                <div class="kpi-card"><div class="value" style="color:var(--success);">{{ stats.feasible_count }}</div><div class="label">Feasible</div></div>
+                <div class="kpi-card"><div class="value" style="color:var(--danger);">{{ stats.infeasible_count }}</div><div class="label">Not Feasible</div></div>
+                <div class="kpi-card"><div class="value">{{ stats.feasibility_rate }}%</div><div class="label">Feasibility Rate</div></div>
+                <div class="kpi-card"><div class="value">{{ stats.avg_budget }}</div><div class="label">Avg Budget</div></div>
+                <div class="kpi-card"><div class="value" style="color:var(--success);">{{ stats.done_count }}</div><div class="label">Completed</div></div>
+            </div>
+            <div class="charts-grid">
+                <div class="chart-card"><div class="chart-header"><h3>Build Feasibility Rate</h3></div><div class="chart-body"><canvas id="feasChart"></canvas></div></div>
+                <div class="chart-card"><div class="chart-header"><h3>Plans by Skill Level</h3></div><div class="chart-body"><canvas id="skillChart"></canvas></div></div>
+                <div class="chart-card"><div class="chart-header"><h3>Most Popular Product Ideas</h3></div><div class="chart-body"><canvas id="productChart"></canvas></div></div>
+                <div class="chart-card"><div class="chart-header"><h3>Plan Status Breakdown</h3></div><div class="chart-body"><canvas id="statusChart"></canvas></div></div>
+                <div class="chart-card full"><div class="chart-header"><h3>Budget vs ML Predicted Cost per Plan</h3></div><div class="chart-body"><canvas id="costChart" style="max-height:200px;"></canvas></div></div>
+            </div>
+            <div class="table-card">
+                <div class="table-header"><h3>Plan Details and ML Predictions</h3></div>
+                <table>
+                    <thead><tr><th>#</th><th>Product Idea</th><th>Carpenter</th><th>Skill</th><th>Budget</th><th>ML Cost</th><th>Feasible</th><th>Confidence</th><th>Status</th></tr></thead>
+                    <tbody>
+                        {% for plan in plans %}
+                        <tr>
+                            <td>{{ plan['id'] }}</td>
+                            <td>{{ plan['product_idea'] }}</td>
+                            <td>{{ plan['maker_name'] }}</td>
+                            <td>{{ plan['skill_level'] }}</td>
+                            <td>R{{ plan['budget'] }}</td>
+                            <td>{{ plan['ml_cost'] }}</td>
+                            <td><span class="pill {{ 'pill-green' if plan['ml_feasible'] == 'YES' else 'pill-red' }}">{{ plan['ml_feasible'] }}</span></td>
+                            <td>{{ plan['ml_confidence'] }}</td>
+                            <td><span class="pill {{ 'pill-yellow' if plan['status'] == 'Pending' else 'pill-blue' if plan['status'] == 'In Progress' else 'pill-green' }}">{{ plan['status'] }}</span></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script>
+        const feasData    = {{ stats.feas_data | tojson }};
+        const skillData   = {{ stats.skill_data | tojson }};
+        const productData = {{ stats.product_data | tojson }};
+        const statusData  = {{ stats.status_data | tojson }};
+        const budgets     = {{ stats.budgets | tojson }};
+        const mlCosts     = {{ stats.ml_costs | tojson }};
+        const planIds     = {{ stats.plan_ids | tojson }};
+        const navy = '#0f2044', accent = '#4f8ef7', green = '#22c55e', red = '#ef4444', yellow = '#f59e0b';
+        const colors = [accent, green, red, yellow, '#9c27b0', '#00bcd4', '#ff5722'];
+        new Chart(document.getElementById('feasChart'), { type: 'doughnut', data: { labels: ['Feasible', 'Not Feasible'], datasets: [{ data: [feasData.yes, feasData.no], backgroundColor: [green, red], borderWidth: 0 }] }, options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'DM Sans' } } } }, cutout: '68%' } });
+        new Chart(document.getElementById('skillChart'), { type: 'bar', data: { labels: Object.keys(skillData), datasets: [{ data: Object.values(skillData), backgroundColor: [accent, green, yellow], borderRadius: 6, borderWidth: 0 }] }, options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } } } });
+        new Chart(document.getElementById('productChart'), { type: 'bar', data: { labels: Object.keys(productData), datasets: [{ data: Object.values(productData), backgroundColor: colors, borderRadius: 6, borderWidth: 0 }] }, options: { indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } } } } });
+        new Chart(document.getElementById('statusChart'), { type: 'doughnut', data: { labels: Object.keys(statusData), datasets: [{ data: Object.values(statusData), backgroundColor: [yellow, accent, green], borderWidth: 0 }] }, options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'DM Sans' } } } }, cutout: '68%' } });
+        new Chart(document.getElementById('costChart'), { type: 'bar', data: { labels: planIds.map(id => 'Plan #' + id), datasets: [ { label: 'Carpenter Budget (R)', data: budgets, backgroundColor: navy, borderRadius: 4, borderWidth: 0 }, { label: 'ML Predicted Cost (R)', data: mlCosts, backgroundColor: accent, borderRadius: 4, borderWidth: 0 } ] }, options: { plugins: { legend: { position: 'bottom', labels: { font: { family: 'DM Sans' } } } }, scales: { y: { beginAtZero: true } } } });
+    </script>
+</body>
+</html>

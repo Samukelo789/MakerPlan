@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Plan — MakerPlan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy:   #0f2044; --navy2: #162b58; --navy3: #1e3a6e;
+            --accent: #4f8ef7; --success: #22c55e; --warning: #f59e0b;
+            --danger: #ef4444; --text: #1a1a2e; --muted: #64748b;
+            --border: #e2e8f0; --bg: #f8fafc; --white: #ffffff;
+            --sidebar-w: 240px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; }
+        .sidebar { width: var(--sidebar-w); background: var(--navy); min-height: 100vh; display: flex; flex-direction: column; position: fixed; top: 0; left: 0; }
+        .sidebar-brand { padding: 28px 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .sidebar-brand h1 { font-size: 18px; font-weight: 600; color: var(--white); }
+        .sidebar-brand p { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
+        .sidebar-nav { padding: 20px 12px; flex: 1; }
+        .nav-label { font-size: 10px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1.2px; padding: 0 12px; margin-bottom: 6px; margin-top: 16px; }
+        .nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: all 0.15s; margin-bottom: 2px; }
+        .nav-item:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+        .nav-item.active { background: var(--accent); color: var(--white); font-weight: 500; }
+        .nav-icon { width: 18px; height: 18px; }
+        .sidebar-footer { padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 11px; color: rgba(255,255,255,0.25); }
+        .main { margin-left: var(--sidebar-w); flex: 1; display: flex; flex-direction: column; }
+        .topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 36px; display: flex; align-items: center; justify-content: space-between; }
+        .topbar h2 { font-size: 16px; font-weight: 600; }
+        .topbar p { font-size: 13px; color: var(--muted); margin-top: 1px; }
+        .content { padding: 32px 36px; }
+        .ml-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+        .ml-card { background: var(--navy); border-radius: 10px; padding: 16px 20px; color: var(--white); }
+        .ml-card .ml-value { font-size: 20px; font-weight: 600; font-family: 'DM Mono', monospace; }
+        .ml-card .ml-label { font-size: 10px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 4px; }
+        .ml-card.feasible-yes { background: #14532d; }
+        .ml-card.feasible-no  { background: #7f1d1d; }
+        .card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+        .card-header { padding: 14px 22px; border-bottom: 1px solid var(--border); background: var(--bg); }
+        .card-header h3 { font-size: 11px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        .card-body { padding: 20px 22px; font-size: 13px; line-height: 1.85; color: #334155; white-space: pre-wrap; font-family: 'DM Mono', monospace; }
+        .meta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+        .meta-pill { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; background: #e8f0fe; color: var(--navy); }
+        .meta-pill.status { background: #fff3cd; color: #92400e; }
+        .btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+        .btn { padding: 10px 20px; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; font-family: 'DM Sans', sans-serif; transition: all 0.15s; }
+        .btn-primary { background: var(--navy); color: white; }
+        .btn-primary:hover { background: var(--navy3); }
+        .btn-secondary { background: var(--bg); color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-success { background: var(--success); color: white; }
+        .btn-success:hover { background: #16a34a; }
+        .feedback-card { background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px; padding: 22px; }
+        .feedback-card h3 { font-size: 11px; font-weight: 700; color: #92400e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .feedback-card p { font-size: 13px; color: #78350f; margin-bottom: 14px; line-height: 1.6; }
+        .feedback-card textarea { width: 100%; padding: 10px 14px; border: 1px solid #fde68a; border-radius: 8px; font-size: 13px; min-height: 80px; resize: vertical; font-family: 'DM Sans', sans-serif; background: var(--white); }
+        .feedback-card textarea:focus { outline: none; border-color: var(--warning); }
+        .btn-feedback { margin-top: 10px; padding: 10px 20px; background: #d97706; color: white; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; }
+        .btn-feedback:hover { background: #b45309; }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <h1>MakerPlan</h1>
+            <p>Community Carpentry Workshop</p>
+        </div>
+        <nav class="sidebar-nav">
+            <p class="nav-label">Main</p>
+            <a href="/" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>New Plan</a>
+            <a href="/dashboard" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>Dashboard</a>
+            <a href="/analytics" class="nav-item active"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>Analytics</a>
+            <p class="nav-label">System</p>
+            <a href="/ethics" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Ethics</a>
+        </nav>
+        <div class="sidebar-footer">Group 2 — Living Lab 2026</div>
+    </aside>
+
+    <main class="main">
+        <div class="topbar">
+            <div>
+                <h2>Prototype Plan #{{ plan['id'] }}</h2>
+                <p>{{ plan['product_idea'] }} — {{ plan['maker_name'] }}</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="meta-row">
+                <span class="meta-pill">Plan #{{ plan['id'] }}</span>
+                <span class="meta-pill">{{ plan['maker_name'] }}</span>
+                <span class="meta-pill">{{ plan['skill_level'] }}</span>
+                <span class="meta-pill">Budget: R{{ plan['budget'] }}</span>
+                <span class="meta-pill status">{{ plan['status'] }}</span>
+            </div>
+            <div class="ml-strip">
+                <div class="ml-card {{ 'feasible-yes' if plan['ml_feasible'] == 'YES' else 'feasible-no' }}">
+                    <div class="ml-value">{{ plan['ml_feasible'] }}</div>
+                    <div class="ml-label">Build Feasible</div>
+                </div>
+                <div class="ml-card">
+                    <div class="ml-value">{{ plan['ml_cost'] }}</div>
+                    <div class="ml-label">Predicted Cost</div>
+                </div>
+                <div class="ml-card">
+                    <div class="ml-value">{{ plan['ml_skill'] }}</div>
+                    <div class="ml-label">Required Skill</div>
+                </div>
+                <div class="ml-card">
+                    <div class="ml-value">{{ plan['ml_confidence'] }}</div>
+                    <div class="ml-label">ML Confidence</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h3>Submitted Constraints</h3></div>
+                <div class="card-body">Product: {{ plan['product_idea'] }}
+Materials: {{ plan['materials'] }}
+Tools: {{ plan['tools'] }}
+Skill Level: {{ plan['skill_level'] }}
+Budget: R{{ plan['budget'] }}</div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h3>AI Generated Prototype Plan</h3></div>
+                <div class="card-body">{{ plan['llm_plan'] }}</div>
+            </div>
+            <div class="btn-row">
+                <a href="/" class="btn btn-secondary">New Plan</a>
+                <a href="/dashboard" class="btn btn-primary">Dashboard</a>
+                <button onclick="window.print()" class="btn btn-success">Print Plan</button>
+            </div>
+            <div class="feedback-card">
+                <h3>Carpenter Feedback</h3>
+                <p>Is anything in this plan unrealistic or unavailable locally? Submit feedback and the AI will revise the plan.</p>
+                <form action="/feedback/{{ plan['id'] }}" method="POST">
+                    <textarea name="feedback" placeholder="e.g. Hardwood planks are too expensive locally. The router tool is not available in our workshop..."></textarea>
+                    <button type="submit" class="btn-feedback">Submit Feedback and Revise Plan</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

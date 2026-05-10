@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — MakerPlan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --navy: #0f2044; --navy2: #162b58; --navy3: #1e3a6e; --accent: #4f8ef7; --success: #22c55e; --warning: #f59e0b; --danger: #ef4444; --text: #1a1a2e; --muted: #64748b; --border: #e2e8f0; --bg: #f8fafc; --white: #ffffff; --sidebar-w: 240px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; }
+        .sidebar { width: var(--sidebar-w); background: var(--navy); min-height: 100vh; display: flex; flex-direction: column; position: fixed; top: 0; left: 0; }
+        .sidebar-brand { padding: 28px 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .sidebar-brand h1 { font-size: 18px; font-weight: 600; color: var(--white); }
+        .sidebar-brand p { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.8px; }
+        .sidebar-nav { padding: 20px 12px; flex: 1; }
+        .nav-label { font-size: 10px; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 1.2px; padding: 0 12px; margin-bottom: 6px; margin-top: 16px; }
+        .nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 14px; transition: all 0.15s; margin-bottom: 2px; }
+        .nav-item:hover { background: rgba(255,255,255,0.07); color: var(--white); }
+        .nav-item.active { background: var(--accent); color: var(--white); font-weight: 500; }
+        .nav-icon { width: 18px; height: 18px; }
+        .sidebar-footer { padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 11px; color: rgba(255,255,255,0.25); }
+        .main { margin-left: var(--sidebar-w); flex: 1; display: flex; flex-direction: column; }
+        .topbar { background: var(--white); border-bottom: 1px solid var(--border); padding: 16px 36px; display: flex; align-items: center; justify-content: space-between; }
+        .topbar h2 { font-size: 16px; font-weight: 600; }
+        .topbar p { font-size: 13px; color: var(--muted); margin-top: 1px; }
+        .content { padding: 32px 36px; }
+        .stats-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 24px; }
+        .stat-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+        .stat-card .value { font-size: 26px; font-weight: 700; font-family: 'DM Mono', monospace; color: var(--navy); }
+        .stat-card .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+        .filter-bar { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
+        .filter-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-right: 4px; }
+        .filter-btn { padding: 6px 14px; border: 1px solid var(--border); background: var(--bg); border-radius: 20px; font-size: 12px; cursor: pointer; font-family: 'DM Sans', sans-serif; color: var(--muted); transition: all 0.15s; }
+        .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .filter-btn.active { background: var(--navy); color: white; border-color: var(--navy); }
+        .plan-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 12px; overflow: hidden; transition: box-shadow 0.15s; }
+        .plan-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+        .plan-card.pending  { border-left: 3px solid var(--warning); }
+        .plan-card.progress { border-left: 3px solid var(--accent); }
+        .plan-card.done     { border-left: 3px solid var(--success); }
+        .plan-top { padding: 16px 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+        .plan-info h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+        .plan-info p { font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+        .plan-date { font-size: 11px; color: #94a3b8; margin-top: 6px; font-family: 'DM Mono', monospace; }
+        .ml-badges { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+        .ml-badge { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; background: #e8f0fe; color: var(--navy); }
+        .ml-badge.yes { background: #dcfce7; color: #14532d; }
+        .ml-badge.no  { background: #fee2e2; color: #7f1d1d; }
+        .badge { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
+        .badge-pending  { background: #fef3c7; color: #92400e; }
+        .badge-progress { background: #dbeafe; color: #1e3a8a; }
+        .badge-done     { background: #dcfce7; color: #14532d; }
+        .plan-actions { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+        .toggle-btn { background: none; border: 1px solid var(--border); color: var(--accent); font-size: 12px; cursor: pointer; font-weight: 500; font-family: 'DM Sans', sans-serif; padding: 5px 12px; border-radius: 6px; transition: all 0.15s; }
+        .toggle-btn:hover { background: var(--accent); color: white; border-color: var(--accent); }
+        .plan-body { background: #0f172a; padding: 16px 20px; border-top: 1px solid var(--border); font-size: 12px; color: #94a3b8; white-space: pre-wrap; display: none; max-height: 280px; overflow-y: auto; line-height: 1.7; font-family: 'DM Mono', monospace; }
+        .update-form { padding: 12px 20px; background: var(--bg); border-top: 1px solid var(--border); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+        .update-form select, .update-form input { padding: 7px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; background: var(--white); font-family: 'DM Sans', sans-serif; color: var(--text); }
+        .update-form button { padding: 7px 16px; background: var(--navy); color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.15s; }
+        .update-form button:hover { background: var(--navy3); }
+        .empty { text-align: center; padding: 60px 20px; color: var(--muted); background: var(--white); border: 1px solid var(--border); border-radius: 10px; }
+        .empty h2 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+        .empty p { font-size: 13px; }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <h1>MakerPlan</h1>
+            <p>Community Carpentry Workshop</p>
+        </div>
+        <nav class="sidebar-nav">
+            <p class="nav-label">Main</p>
+            <a href="/" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>New Plan</a>
+            <a href="/dashboard" class="nav-item active"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>Dashboard</a>
+            <a href="/analytics" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>Analytics</a>
+            <p class="nav-label">System</p>
+            <a href="/ethics" class="nav-item"><svg class="nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>Ethics</a>
+        </nav>
+        <div class="sidebar-footer">Group 2 — Living Lab 2026</div>
+    </aside>
+
+    <main class="main">
+        <div class="topbar">
+            <div>
+                <h2>Carpenter Dashboard</h2>
+                <p>All submitted prototype plans</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="stats-row">
+                <div class="stat-card"><div class="value">{{ plans | length }}</div><div class="label">Total Plans</div></div>
+                <div class="stat-card"><div class="value" style="color:var(--warning);">{{ plans | selectattr('status','equalto','Pending') | list | length }}</div><div class="label">Pending</div></div>
+                <div class="stat-card"><div class="value" style="color:var(--accent);">{{ plans | selectattr('status','equalto','In Progress') | list | length }}</div><div class="label">In Progress</div></div>
+                <div class="stat-card"><div class="value" style="color:var(--success);">{{ plans | selectattr('status','equalto','Done') | list | length }}</div><div class="label">Completed</div></div>
+                <div class="stat-card"><div class="value" style="color:var(--success);">{{ plans | selectattr('ml_feasible','equalto','YES') | list | length }}</div><div class="label">Feasible</div></div>
+            </div>
+            <div class="filter-bar">
+                <span class="filter-label">Filter</span>
+                <button class="filter-btn active" onclick="filterPlans('all', this)">All</button>
+                <button class="filter-btn" onclick="filterPlans('Pending', this)">Pending</button>
+                <button class="filter-btn" onclick="filterPlans('In Progress', this)">In Progress</button>
+                <button class="filter-btn" onclick="filterPlans('Done', this)">Done</button>
+            </div>
+            {% if plans %}
+                {% for plan in plans %}
+                <div class="plan-card {{ 'pending' if plan['status'] == 'Pending' else 'progress' if plan['status'] == 'In Progress' else 'done' }}" data-status="{{ plan['status'] }}">
+                    <div class="plan-top">
+                        <div class="plan-info">
+                            <h3>#{{ plan['id'] }} — {{ plan['product_idea'] }}</h3>
+                            <p>Carpenter: {{ plan['maker_name'] }} &nbsp;|&nbsp; Skill: {{ plan['skill_level'] }} &nbsp;|&nbsp; Budget: R{{ plan['budget'] }}</p>
+                            <p>Assigned: {{ plan['assigned_to'] }}</p>
+                            <div class="ml-badges">
+                                <span class="ml-badge {{ 'yes' if plan['ml_feasible'] == 'YES' else 'no' }}">Feasible: {{ plan['ml_feasible'] }}</span>
+                                <span class="ml-badge">{{ plan['ml_cost'] }}</span>
+                                <span class="ml-badge">{{ plan['ml_skill'] }}</span>
+                                <span class="ml-badge">{{ plan['ml_confidence'] }}</span>
+                            </div>
+                            <p class="plan-date">{{ plan['created_at'] }}</p>
+                        </div>
+                        <div class="plan-actions">
+                            <span class="badge {{ 'badge-pending' if plan['status'] == 'Pending' else 'badge-progress' if plan['status'] == 'In Progress' else 'badge-done' }}">{{ plan['status'] }}</span>
+                            <button class="toggle-btn" onclick="togglePlan({{ plan['id'] }})">View Plan</button>
+                        </div>
+                    </div>
+                    <div class="plan-body" id="plan-{{ plan['id'] }}">{{ plan['llm_plan'] }}</div>
+                    <form class="update-form" action="/update/{{ plan['id'] }}" method="POST">
+                        <select name="status">
+                            <option value="Pending" {% if plan['status'] == 'Pending' %}selected{% endif %}>Pending</option>
+                            <option value="In Progress" {% if plan['status'] == 'In Progress' %}selected{% endif %}>In Progress</option>
+                            <option value="Done" {% if plan['status'] == 'Done' %}selected{% endif %}>Done</option>
+                        </select>
+                        <input type="text" name="assigned_to" placeholder="Assign to carpenter" value="{{ plan['assigned_to'] if plan['assigned_to'] != 'Unassigned' else '' }}">
+                        <button type="submit">Update</button>
+                    </form>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty"><h2>No prototype plans yet</h2><p>When carpenters submit product ideas they will appear here.</p></div>
+            {% endif %}
+        </div>
+    </main>
+    <script>
+        function togglePlan(id) {
+            const body = document.getElementById('plan-' + id);
+            body.style.display = body.style.display === 'block' ? 'none' : 'block';
+        }
+        function filterPlans(status, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.plan-card').forEach(card => {
+                card.style.display = (status === 'all' || card.dataset.status === status) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
